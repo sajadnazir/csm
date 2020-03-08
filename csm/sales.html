@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSM | Sales</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+            <div class="nav-grid">
+                <li><a href="rates.html">Manage Rates</a></li>
+                <li><a href="customers.php">Add Customer</a></li>
+            </div>
+            <div class="nav-grid flex-end">
+                <li>
+                    <form class="display-flex" method="GET" action="search.php">
+                        <input type="search" name="keywords" required placeholder="Search......" class="search" required>
+                        <input type="submit" value="Search" class="bg-white btn nav-button">
+                    </form>
+                    
+                </li>
+                <li><a href="logout.php">Logout</a></li>
+            </div>
+            </ul>
+        </nav>
+        <main>
+            <form method="POST">
+                <div>
+                    <label> Name:</label>
+                    <input type="text" required name="name">
+                </div>
+                
+                <div>
+                    <label> Vehicle Number:</label>
+                    <input type="text" required name="vehicleNumber">
+                </div>
+
+                <div>
+                    <label> Type:</label>
+                    <select name="type">
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label> Quantity:</label>
+                    <input type="number" name="quantity" required>
+                </div>
+
+                <div>
+                    <label> Total Amount:</label>
+                    <input type="text" name="amount" required>
+                </div>
+
+                <div>
+                    <label> Payment Type:</label>
+                    <select name="paymentType">
+                        <option value="cash">Cash</option>
+                        <option value="card">Card</option>
+                        <option value="credit">Credit</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label> Date:</label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <div>
+                    <input type="submit" value="SAVE">
+                </div>
+            </form>
+        </main>
+        
+    </body>
+</html>

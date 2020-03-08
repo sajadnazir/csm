@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSM | Rates</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+            <div class="nav-grid">
+                <li><a href="dashboard.php">Home</a></li>
+                <li><a href="rates.html">Manage Rates</a></li>
+                <li><a href="customers.php">Add Customer</a></li>
+            </div>
+            <div class="nav-grid flex-end">
+                <li>
+                    <form class="display-flex" method="GET" action="php/search.php">
+                        <input type="search" required name="keywords" placeholder="Search......" class="search" required>
+                        <input type="submit" required value="Search" class="bg-white btn nav-button">
+                    </form>
+                    
+                </li>
+                <li><a href="logout.php">Logout</a></li>
+            </div>
+            </ul>
+        </nav>
+
+        <main>
+            <form method="POST" action="add_rate.php">
+              <div class="container">
+
+                <div class="info font30">
+                    Update Fuel Rate
+                </div>
+
+                <div class="main-login card">
+                <div class="form-element">
+                    <label> Petrol:</label>
+                    <input type="text" name="ratePetrol">
+                </div>
+
+                <div class="form-element">
+                    <label> Diesel:</label>
+                    <input required type="text" name="rateDiesel">
+                </div>
+
+                <div class="form-element">
+                    <input required type="submit" value="Add Rate" class="btn white-color">
+                </div>
+            </div>
+            </div>
+
+            </form>
+        </main>
+        
+    </body>
+</html>
