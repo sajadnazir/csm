@@ -26,6 +26,7 @@ $rate=$row['rate'];
 $amount=$row['amount'];
 $payment_type=$row['payment'];
 $paid=$row['paid'];
+$ccn=$row['ccn'];
 $date=$row['date'];
 
 ?> 
@@ -77,7 +78,7 @@ $date=$row['date'];
                 
                 <div class="form-element"> 
                     <label> Vehicle Number:</label>
-                    <input type="text" required name="vehicleNumber" value="<?php echo $vehicle; ?>">
+                    <input type="text"  name="vehicleNumber" value="<?php echo $vehicle; ?>">
                 </div>
 
                 <div class="form-element">
@@ -109,12 +110,18 @@ $date=$row['date'];
                         <option value="cash">Cash</option>
                         <option value="card">card</option>
                         <option value="credit">Credit</option>
+                        <option value="cheque">Cheque</option>
                     </select>
                 </div>
 
                 <div class="form-element">
                     <label> Amount Paid:</label>
                     <input type="number" required name="paid" value="<?php echo $paid; ?>">
+                </div>
+
+                <div class="form-element">
+                    <label> Cheque/Card No:</label>
+                    <input type="number"  name="ccn" value="<?php echo $ccn; ?>">
                 </div>
 
                 <div class="form-element">

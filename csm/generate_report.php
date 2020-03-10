@@ -30,6 +30,7 @@ $output='';
            <th>AMOUNT</th>
            <th>PAYMENT TYPE</th>
            <th>PAID</th>
+           <th>CHQ/CRD</th>
            <th>DATE</th>
            <th>BALANCE</th>
         </tr>
@@ -55,6 +56,7 @@ $output='';
         <td>'.$row['amount'].'</td>
         <td>'.$row['payment'].'</td>
         <td>'.$row['paid'].'</td>
+        <td>'.$row['ccn'].'</td>
         <td>'.$row['date'].'</td>
         <td>'.$total.'</td>
         </tr>

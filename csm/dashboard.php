@@ -32,7 +32,6 @@
 
         <div class="upper-strip-sale card">
             <div>SALE NO</div>
-            <div>ID</div>
             <div>NAME</div>
             <div>VEHICLE NO.</div>
             <div>QUANTITY</div>
@@ -40,6 +39,7 @@
             <div>T.AMOUNT</div>
             <div>PAYMENT MODE</div>
             <div>PAID</div>
+            <div>CHQ/CARD</div>
             <div>DATE</div>
             <div>EDIT</div>
             
@@ -57,7 +57,6 @@
                            ?>
                                 <div class="one-user-sale card"> 
                                   <div><?php echo $row['saleId']; ?>   </div>
-                                  <div><?php echo $row['id']; ?>   </div>
                                   <div><?php  echo $row['name']; ?></div>
                                   <div><?php  echo $row['vehicle']; ?></div>
                                   <div><?php  echo $row['quantity']; ?></div>
@@ -65,8 +64,9 @@
                                   <div><?php  echo $row['amount']; ?></div>
                                   <div><?php  echo $row['payment']; ?></div>
                                   <div><?php  echo $row['paid']; ?></div>
+                                  <div><?php  echo $row['ccn']; ?></div>
                                   <div><?php  echo $row['date']; ?></div>
-                                  <div><a class="black-color" href="edit.php?id=<?php echo $row['saleId']; ?>"> Edit</a></div>
+                                  <div><a class="red-color" href="edit.php?id=<?php echo $row['saleId']; ?>"> Edit</a></div>
                 
                                   </div>
                                  

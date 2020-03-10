@@ -61,9 +61,10 @@ if(isset($_GET['id']))
 
             <div class="form-element">
         
-                <input type="submit" value="Generate" class="i-report btn">
+                <input type="submit"  value="Generate" class="i-report btn" onclick="alert('Do you want to generate a report?');">
                 
             </div>
+            
             </div>
 
             </div>

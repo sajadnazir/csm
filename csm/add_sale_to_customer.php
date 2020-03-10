@@ -64,7 +64,7 @@ $rateDiesel=$row['diesel'];
                 
                 <div class="form-element"> 
                     <label> Vehicle Number:</label>
-                    <input type="text" name="vehicleNumber" required>
+                    <input type="text" name="vehicleNumber" >
                 </div>
 
                 <div class="form-element">
@@ -97,7 +97,13 @@ $rateDiesel=$row['diesel'];
                         <option value="cash">Cash</option>
                         <option value="card">Card</option>
                         <option value="credit">Credit</option>
+                        <option value="cheque">Cheque</option>
                     </select>
+                </div>
+
+                <div class="form-element">
+                    <label> Cheque/Card Number:</label>
+                    <input type="text" name="ccn" >
                 </div>
 
                 <div class="form-element">

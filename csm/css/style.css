@@ -16,6 +16,7 @@ a{
     color: #fff;
 }
 
+
 .font10{font-size: 10px;}
 .font11{font-size: 11px;}
 .font12{font-size: 12px;}
@@ -327,4 +328,8 @@ main:last-child{
 
 input:focus{
     outline: none !important; 
+}
+
+.red-color{
+    color: red !important;
 }
